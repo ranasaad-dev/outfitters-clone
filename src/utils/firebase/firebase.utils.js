@@ -18,12 +18,12 @@ import {
 //firebase configurations
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBfw7sRIBFJfeyvJqCuJTmETdfWCH3GEJo",
-  authDomain: "xstore-4ca24.firebaseapp.com",
-  projectId: "xstore-4ca24",
-  storageBucket: "xstore-4ca24.firebasestorage.app",
-  messagingSenderId: "644828695092",
-  appId: "1:644828695092:web:8a362b2ad1809124af5861"
+  apiKey: "YOUR_API_KEY",
+  authDomain: "AUTH_DOMAIN_NAME",
+  projectId: "PROJECT_ID",
+  storageBucket: "STORAGE_BUCKET",
+  messagingSenderId: "MESSAGING_SENDER_ID",
+  appId: "APP_ID"
 };
 
 //created instence of the app
