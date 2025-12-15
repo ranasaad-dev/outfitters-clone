@@ -1,0 +1,115 @@
+
+div.left-sidebar svg.cross {
+    font-size: 20px;
+    position: absolute;
+    top: 50px;
+    left: 70px;
+}
+
+.nav-menu {
+    height: 100vh;
+    width: 450px;
+    background-color: rgb(255, 255, 255);
+     position: fixed;
+    left: -100%;
+    top: 0;
+    z-index: 1;
+    font-size: 1rem;
+    transition: all 0.5s;
+}
+
+.nav-menu div {
+    margin-left: 92px;
+}
+
+.sidebar-zero {
+    border: 0;
+    padding-bottom: 4vh;
+}
+
+.sidebar-first {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 5px;
+    margin-top: 35px;
+
+}
+
+.sidebar-first h6 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.sidebar-second {
+    padding-top: 15px;
+    padding-bottom: 20px;
+
+}
+
+.sidebar-second h6 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+   
+    
+}
+
+.sidebar-second h6:hover{
+    scale: 1.05;
+    color: #2b2828;
+    cursor: pointer;
+}
+.sidebar-second h6 span {
+    font-size: 12px;
+    font-weight: 600;
+    position: relative;
+    bottom: -100%;
+    left: 5px;
+}
+
+
+.sidebar-third {
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+
+.sidebar-third h6 {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 29px;
+}
+
+.sidebar-fourth {
+    padding-bottom: 30px;
+    padding-top: 16px;
+}
+
+.sidebar-fourth h5 {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 29px;
+}
+
+.sidebar-fifth {
+    padding-top: 30px;
+    display: inline-block;
+    position: relative;
+    top: 0;
+}
+
+.sidebar-fifth h4 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 29px;
+
+}
+
+.active-left {
+    left: 0;
+}
+
+.nav-menu .close-LSB {
+    position: absolute;
+    top: 5%;
+    left: 15%;
+}

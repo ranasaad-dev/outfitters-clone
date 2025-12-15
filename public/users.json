@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Eraser",
+    "id": 1,
+    "price": 5
+},
+{
+    "name": "Shopner",
+    "id": 2,
+    "price": 5
+},
+{
+    "name": "Pen",
+    "id": 3,
+    "price": 50
+},
+{
+    "name": "Tape",
+    "id": 4,
+    "price": 10
+},
+{
+    "name": "Diary",
+    "id": 5,
+    "price": 30
+},
+{
+    "name": "Pin",
+    "id": 6,
+    "price": 30
+},
+{
+    "name": "Glue",
+    "id": 7,
+    "price": 10
+},
+{
+    "name": "Copy",
+    "id": 8,
+    "price": 50
+},
+{
+    "name": "Register",
+    "id": 9,
+    "price": 50
+}
+
+  ]

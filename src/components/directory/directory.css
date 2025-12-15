@@ -1,0 +1,13 @@
+
+ .directory-menu {
+    background-color: #ffffff;
+       cursor: pointer;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: auto;
+
+}
+ 

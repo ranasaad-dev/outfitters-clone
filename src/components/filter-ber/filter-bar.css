@@ -1,0 +1,29 @@
+.filter-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 26px 30px;
+    padding-right: 16px;
+    padding-top: 12px;
+
+}
+
+.filter-bar-item-first h2 {
+    font-size: 14px;
+    font-weight: 100;
+    font-family: sans-serif;
+    line-height: 2.6;
+    padding-bottom: 10px;
+    word-spacing: 0;
+    width: 200px;
+}
+
+.filter-bar-item-second {
+    margin-left: 69%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+ 
+}

@@ -1,0 +1,80 @@
+.login {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+min-height: 92vh;
+padding: 4rem 15%;
+background-color: #fff;
+}
+
+.login form {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+max-width: 420px;
+gap: 1.25rem;
+}
+
+.login h1 {
+margin-bottom: 1.5rem;
+font-size: 46px;
+font-weight: 700;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.login .email,
+.login .password {
+width: 100%;
+height: 50px;
+font-size: 16px;
+text-align: center;
+color: rgb(83, 78, 78);
+border: none;
+border-bottom: 2px solid #535252;
+background: transparent;
+}
+
+.login .email:focus,
+.login .password:focus {
+outline: none;
+border-bottom-color: #000;
+}
+
+.login .forgot {
+align-self: flex-end;
+font-size: 12px;
+color: rgb(83, 78, 78);
+text-decoration: none;
+margin-top: -0.5rem;
+}
+
+.login .submit,
+.login .new-account button,
+.login > button {
+width: 100%;
+height: 44px;
+background-color: #000;
+color: #fff;
+font-size: 12px;
+border: none;
+cursor: pointer;
+transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.login .submit:hover,
+.login .new-account button:hover,
+.login > button:hover {
+background-color: #fff;
+color: #000;
+}
+
+.login .new-account {
+width: 100%;
+}
+
+.login > button {
+max-width: 420px;
+margin-top: 1rem;
+}

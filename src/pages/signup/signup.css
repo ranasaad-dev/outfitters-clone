@@ -1,0 +1,70 @@
+.signup {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 92vh;
+    background-color: #fff;
+    padding: 0 15%;
+
+
+}
+
+.signup h1 {
+    font-size: 46px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px;
+}
+
+.signup .email {
+    display: inline-block;
+    margin: 12px;
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    padding-right: 3.5%;
+    color: rgb(83, 78, 78);
+    border: none;
+    border-bottom: 2px solid #535252;
+}
+
+.signup .password {
+    display: inline-block;
+    margin: 12px;
+    margin-bottom: 0;
+    width: 50%;
+    height: 50px;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    color: rgb(83, 78, 78);
+    border-bottom: 2px solid #535252;
+}
+
+
+.signup .submit {
+    display: inline-block;
+    margin: 12px;
+    width: 120px;
+    height: 40px;
+    padding: 10px 15px 10px 15px;
+    background-color: black;
+    color: #fff;
+    position: absolute;
+    top: 58%;
+    left: 45%;
+}
+.signup .submit:hover{
+       background-color: #fff;
+    color: #000;
+}
+
+.signup .google-button{
+    display: inline-block;
+    margin: 12px;
+    width: 120px;
+    height: 40px;
+    padding: 10px 15px 10px 15px;
+    background-color: black;
+    color: #fff;
+}
