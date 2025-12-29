@@ -3,6 +3,7 @@
 /firebase-debug.log
 /firebase-debug.*.log
 .firebaserc
+src/utils/firebase/firebase.utils.js
 
 # Firebase Hosting
 /firebase.json
