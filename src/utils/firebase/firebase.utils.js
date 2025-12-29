@@ -3,10 +3,13 @@
 import { initializeApp } from "firebase/app";
 import {
   getAuth,
-  signInWithRedirect,
   signInWithPopup,
-  GoogleAuthProvider
+  GoogleAuthProvider,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword
+
 } from "firebase/auth";
+
 import {
   getFirestore,
   doc,
@@ -14,6 +17,8 @@ import {
   setDoc
 
 } from "firebase/firestore";
+
+
 
 //firebase configurations
 
@@ -28,41 +33,56 @@ const firebaseConfig = {
 
 //created instence of the app
 const firebaseApp = initializeApp(firebaseConfig);
-// provider of the login method
-const provider = new GoogleAuthProvider();
-provider.setCustomParameters({
+// googleProvider of the login method
+const googleProvider = new GoogleAuthProvider();
+googleProvider.setCustomParameters({
   prompt: "select_account"
 })
 
+
 export const auth = getAuth();
 export const db = getFirestore();
+// Authenticate user with google
+export const signInWithGooglePopup = () => signInWithPopup(auth, googleProvider);
 
-export const signInWithGooglePopup = () => signInWithPopup(auth, provider);
+//Enter/Fetch User from database. 
 export const createUserDocumentFromAuth = async (userAuth) => {
+  if (!userAuth) return;
   const userDocRef = doc(db, "users", userAuth.uid);
-
-  console.log(userDocRef);
-
   const userSnapshot = await getDoc(userDocRef);
-  console.log(userSnapshot);
-  console.log(userSnapshot.exists());
-
   if (!userSnapshot.exists()) {
     const { displayName, email } = userAuth;
     const createdAt = new Date();
-
     try {
       await setDoc(userDocRef, {
         displayName,
         email,
         createdAt
       })
-
     } catch (error) {
-      console.log("Error creating the user ", error.message);
+      console.log("Failed to Enter/Fetch User from database", error.message);
     }
   }
-
   return userDocRef;
+}
+//Authenticate user with email and password
+export const createAuthUserWithEmailAndPassword = async (email, password) => {
 
+  if (!email || !password) return;
+  try {
+    return await createUserWithEmailAndPassword(auth, email, password);
+  } catch (err) {
+    console.log("Failed to Authenticate user with email and password.", err);
+  }
+}
+
+//Log in user with email and password
+export const authUserWithEmailAndPassword = async (email, password) => {
+  if (!email || !password) return;
+  try {
+    return await signInWithEmailAndPassword(auth, email, password);
+  } catch (err) {
+    console.log("Error loging in with email", err);
+    return err;
+  }
 }

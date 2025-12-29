@@ -32,7 +32,7 @@ class App extends React.Component {
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Login />} />
-          <Route path="/login" element={<Homepage />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/exchange" element={<Exchange />} />

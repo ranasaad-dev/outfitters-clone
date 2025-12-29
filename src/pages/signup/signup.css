@@ -51,20 +51,10 @@
     background-color: black;
     color: #fff;
     position: absolute;
-    top: 58%;
+    top: 69%;
     left: 45%;
 }
 .signup .submit:hover{
        background-color: #fff;
     color: #000;
-}
-
-.signup .google-button{
-    display: inline-block;
-    margin: 12px;
-    width: 120px;
-    height: 40px;
-    padding: 10px 15px 10px 15px;
-    background-color: black;
-    color: #fff;
 }
